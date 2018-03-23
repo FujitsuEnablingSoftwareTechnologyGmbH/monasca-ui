@@ -7,6 +7,6 @@
 
     "default": "@",
 
-    "monitoring:monitoring": "rule:admin_or_owner",
+    "monitoring:monitoring": "rule:monasca_user_role",
     "monitoring:kibana_access": "rule:monasca_user_role"
 }
