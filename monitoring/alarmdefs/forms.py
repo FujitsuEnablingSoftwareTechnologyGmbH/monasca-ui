@@ -174,6 +174,8 @@ class EditAlarmForm(forms.SelfHandlingForm):
         self.fields['name'] = forms.CharField(label=_("Name"),
                                               required=required,
                                               max_length=250,
+                                              blank=False,
+                                              null=False,
                                               widget=textWidget,
                                               help_text=_("An unique name of the alarm."))
         self.fields['expression'] = forms.CharField(label=_("Expression"),
